@@ -34,9 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    
     func firstLaunchApp() {
         if UserDefaults.standard.bool(forKey: "hasLaunchedBefore") {
-            print("===> App has launched before")
+            print("===> App já iniciada antes")
         } else {
-            print("===> This is the first launch ever!")
+            print("===> App iniciada pela primeira vez")
             UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
             UserDefaults.standard.set(false, forKey: "isNight")
         }
